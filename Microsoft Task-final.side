@@ -1,0 +1,71 @@
+{
+  "id": "01eaf31b-ede9-465d-ae67-154418f2a841",
+  "version": "2.0",
+  "name": "Microsoft Task1",
+  "url": "https://main.sci.gov.in/",
+  "tests": [{
+    "id": "f3b3d9f2-b406-40eb-aab8-d757af441f5d",
+    "name": "Microsoft Task",
+    "commands": [{
+      "id": "41232120-6792-495f-85ef-9a49c72a7426",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86aaa357-5c59-40f8-8ff8-e580c246ea81",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7d8c5d6-b2fb-4918-aadc-6cffcfb26c97",
+      "comment": "",
+      "command": "click",
+      "target": " css=.z-active li:nth-child(1) > a",
+      "targets": [
+        ["css=.z-active li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='tabbed-nav']/div/div[2]/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, './pdf/ListingNotice/02032024_185256.pdf')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1628",
+      "windowTimeout": 2000
+    }, {
+      "id": "bf8535cd-db02-4f5d-b03a-895cf5a8b819",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "783960dd-c669-4320-b08d-b063014974bd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eecfc72b-bd7c-4be4-9701-2583d2b55c83",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "18afdd75-4db2-4691-a105-a652f7efddc1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f3b3d9f2-b406-40eb-aab8-d757af441f5d"]
+  }],
+  "urls": ["https://main.sci.gov.in/"],
+  "plugins": []
+}
